@@ -27,7 +27,7 @@ isToday('2015-08-19', true);
 
 ### isToday(date, [convert])
 
-#### input
+#### date
 
 *Required*  
 Type: `Date`

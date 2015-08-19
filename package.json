@@ -3,7 +3,7 @@
   "version": "0.1.1",
   "description": "Check if a date is today with optional conversion to date.",
   "license": "MIT",
-  "repository": "fsystem/is-today",
+  "repository": "rsystem-se/is-today",
   "author": {
     "name": "Ulrik Augustsson",
     "email": "ulrikaugustsson@gmail.com",
