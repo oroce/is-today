@@ -1,6 +1,6 @@
 # is-today [![Build Status](https://travis-ci.org/rsystem-se/is-today.svg?branch=master)](https://travis-ci.org/rsystem-se/is-today)
 
-> Check if a date is today with optional conversion to date.
+> Check if a date is today with optional conversion to date and time travel.
 
 
 ## Install
