@@ -13,13 +13,13 @@ describe('without conversion', function () {
 
 	it('should throw if param is not a date', function () {
 		assert.throws(function () {
-			isToday('unicorns')
+			isToday('unicorns');
 		});
 	});
 
 	it('should throw if no param is supplied', function () {
 		assert.throws(function () {
-			isToday()
+			isToday();
 		});
 	});
 });
@@ -32,7 +32,7 @@ describe('with conversion', function () {
 	it('should return true if converted date is today', function () {
 		var testDate = new Date();
 		assert.equal(isToday(testDate.toString(), {convert: true}), true);
-	})
+	});
 
 	it('should return false if the date is not today', function () {
 		assert.equal(isToday(new Date('1977-01-01'), {convert: true}), false);
@@ -56,7 +56,6 @@ describe('with conversion', function () {
 		});
 	});
 });
-
 
 describe('with time travel', function () {
 	it('should return true if the date is scoped day', function () {
