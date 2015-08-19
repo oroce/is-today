@@ -1,6 +1,6 @@
 {
   "name": "is-today",
-  "version": "0.1.2",
+  "version": "1.0",
   "description": "Check if a date is today with optional conversion to date.",
   "license": "MIT",
   "repository": "rsystem-se/is-today",
