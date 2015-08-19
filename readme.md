@@ -18,26 +18,39 @@ var isToday = require('is-today');
 isToday(new Date());
 //=> true
 
-isToday('2015-08-19', true);
+isToday('2015-08-19', {convert: true});
+//=> true
+
+isToday('1997-01-11', {convert: true, scope: new Date('1997-01-01')});
 //=> true
 ```
 
 
 ## API
 
-### isToday(date, [convert])
+### isToday(date, [options])
 
 #### date
 
 *Required*  
 Type: `Date`
 
-#### convert
+#### options
 
-Type: `boolean`  
-Default: `false`
+Type: `object`
+Default: `{}`
 
-If true will try to convert the first parameter to a date.
+#### keys on options
+
+Type: `convert`
+Default: `boolean`
+
+if true convert first parameter into a date object
+
+Type: `scope`
+Default: `new Date()`
+
+i can hack you back in time...
 
 
 ## License
