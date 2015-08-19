@@ -1,4 +1,4 @@
-# is-today [![Build Status](https://travis-ci.org/ulrikaugustsson/is-today.svg?branch=master)](https://travis-ci.org/ulrikaugustsson/is-today)
+# is-today [![Build Status](https://travis-ci.org/fsystem/is-today.svg?branch=master)](https://travis-ci.org/ulrikaugustsson/is-today)
 
 > Check if a date is today with optional conversion to date.
 
