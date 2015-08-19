@@ -1,0 +1,58 @@
+'use strict';
+var assert = require('assert');
+var isToday = require('./');
+
+describe('without conversion', function () {
+	it('should return true if the date is today', function () {
+		assert.equal(isToday(new Date()), true);
+	});
+
+	it('should return false if the date is not today', function () {
+		assert.equal(isToday(new Date('1977-01-01')), false);
+	});
+
+	it('should throw if param is not a date', function () {
+		assert.throws(function () {
+			isToday('unicorns')
+		});
+	});
+
+	it('should throw if no param is supplied', function () {
+		assert.throws(function () {
+			isToday()
+		});
+	});
+});
+
+describe('with conversion', function () {
+	it('should return true if the date is today', function () {
+		assert.equal(isToday(new Date(), true), true);
+	});
+
+	it('should return true if converted date is today', function () {
+		var testDate = new Date();
+		assert.equal(isToday(testDate.toString(), true), true);
+	})
+
+	it('should return false if the date is not today', function () {
+		assert.equal(isToday(new Date('1977-01-01'), true), false);
+	});
+
+	it('should throw if param is not a date', function () {
+		assert.throws(function () {
+			isToday('unicorns', true)
+		});
+	});
+
+	it('should throw if no param is supplied', function () {
+		assert.throws(function () {
+			isToday()
+		});
+	});
+
+	it('should not convert if the convert argument is not a bool', function () {
+		assert.throws(function () {
+			isToday('unicorns', 'true');
+		});
+	});
+});

@@ -1,0 +1,29 @@
+{
+  "name": "is-today",
+  "version": "0.1.0",
+  "description": "My groundbreaking module",
+  "license": "MIT",
+  "repository": "fsystem/is-today",
+  "author": {
+    "name": "Ulrik Augustsson",
+    "email": "ulrikaugustsson@gmail.com",
+    "url": "rsystem.se"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "date",
+    "today"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "mocha": "^2.2.5"
+  }
+}
