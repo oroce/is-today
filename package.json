@@ -1,6 +1,6 @@
 {
   "name": "is-today",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Check if a date is today with optional conversion to date.",
   "license": "MIT",
   "repository": "rsystem-se/is-today",
@@ -13,7 +13,9 @@
     "node": ">=0.10.0"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "npm run compile && mocha",
+    "compile": "babel -d lib/ src/",
+    "prepublish": "npm run compile"
   },
   "files": [
     "index.js"
@@ -24,6 +26,7 @@
   ],
   "dependencies": {},
   "devDependencies": {
+    "babel": "^5.8.21",
     "mocha": "^2.2.5"
   }
 }
